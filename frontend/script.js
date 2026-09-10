@@ -1,6 +1,5 @@
 const chat=document.getElementById('chat');
 const input=document.getElementById('msg');
-
 document.getElementById('send').onclick=()=>{
   const t=input.value.trim();
   if(!t)return; 
@@ -10,7 +9,6 @@ document.getElementById('send').onclick=()=>{
   setTimeout(()=>{ 
     chat.lastChild.innerText='P.R.A.S.A.N.N.A: Systems online. How may I assist you, Boss?'; },1000);
 };
-
 function add(text,who){
   const d=document.createElement('div');
   d.className='msg '+who; 
